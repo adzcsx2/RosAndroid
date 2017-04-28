@@ -84,7 +84,7 @@ public class RosUtil {
      * 发送Topic消息给机器人
      *
      * @param topicName topic 名
-     * @param data      参数
+     * @param data      json数据
      */
     public static void sendTopicMessage(String topicName, String data) {
         String msg = "{\"op\":\"publish\",\"topic\":\"" + topicName + "\",\"msg\":{" + data + "}}";
